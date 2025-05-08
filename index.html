@@ -1,9 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/">
 <head>
-    <title>Test Page </title>
+    <meta charset="UTF-8">
+    <title>Hakkı Egemen Gülpınar - FOAF Profile</title>
+    <meta name="description" content="FOAF profile for Hakkı Egemen Gülpınar, created with Linked Data principles.">
+
+    <base href="http://www.egemengulpinar.com/">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; color: #333; }
+        .profile { border: 1px solid #ddd; padding: 20px; max-width: 750px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; margin-top: 0; }
+        h2 { color: #34495e; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 30px;}
+        ul { list-style-type: circle; padding-left: 20px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; color: #2980b9;}
+        img.profile-picture { border-radius: 50%; border: 3px solid #ecf0f1; margin-bottom: 15px; }
+        p, li { margin-bottom: 10px; }
+    </style>
 </head>
 <body>
-    <h1>ITS TEST!</h1>
+
+    <div class="profile" about="#heg" typeof="foaf:Person schema:Person"> 
+        <h1 property="foaf:name schema:name">Hakkı Egemen Gülpınar</h1>
+
+        <p>
+            Nickname: <span property="foaf:nick schema:alternateName">egemengulpinar</span>
+        </p>
+
+       
+        <p>
+            Email: <a property="foaf:mbox" href="mailto:hakki.guelpinar@uni-bielefeld.de">[hakki.guelpinar@uni-bielefeld.de]</a>
+        </p>
+        
+
+        <p>
+            Homepage: <a rel="foaf:homepage schema:url" href="http://www.egemengulpinar.com">egemengulpinar.com</a>
+        </p>
+        <p>
+            LinkedIn: <a rel="foaf:page schema:sameAs" href="https://www.linkedin.com/in/egemen-gulpinar/">linkedin.com/in/egemen-gulpinar</a>
+           
+        </p>
+
+        <img class="profile-picture" rel="foaf:img schema:image" src="https://www.egemengulpinar.com/assets/img/profile_picture4-1400.webp" alt="Hakkı Egemen Gülpınar Profile Picture" width="150" />
+
+        <h2>Interests & Skills</h2>
+        <p>The following are some of my interests and skills marked up with RDFa. DBpedia links help associate these topics with the broader Linked Data web.</p>
+        <ul>
+            <!-- Programming Languages -->
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/Python_(programming_language)">
+                Python
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/JavaScript">
+                JavaScript
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/SQL">
+                SQL
+            </li>
+            <!-- AI and Core Technologies -->
+            <li property="foaf:interest schema:knowsAbout">YOLO (Object Detection)</li> 
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/LangChain">
+                LangChain
+            </li>
+            <li property="foaf:interest schema:knowsAbout">AI Agents</li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/CUDA">
+                NVIDIA CUDA Development
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/Parallel_computing">
+                Parallel Computing
+            </li>
+            <!-- Web Technologies and Tools -->
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/Django_(web_framework)">
+                Django
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/React_(software)">
+                React
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/Docker_(software)">
+                Docker
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/Linux">
+                Linux
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/OpenCV">
+                OpenCV
+            </li>
+            <li rel="foaf:topic_interest schema:knowsAbout" resource="http://dbpedia.org/resource/PyTorch">
+                PyTorch
+            </li>
+        </ul>
+        <p property="rdfs:comment schema:description">The list above highlights some of my key skills and interests. For more details, please visit my website and LinkedIn profile.</p>
+
+
+
+    </div>
+
+
+
 </body>
 </html>
